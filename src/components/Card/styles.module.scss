@@ -1,0 +1,78 @@
+.cardContainer {
+  margin-top: 90px;
+  display: grid;
+  gap: 60px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  main {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #0000000A;
+    border-radius: 10px;
+
+    margin-bottom: 55px;
+    max-width: auto;
+    height: auto;
+  }
+
+  section {
+    padding: 35px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  section div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .textProfile {
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageCard {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    width: 300px;
+
+  }
+
+  @media (max-width: 1500px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+   
+  }
+
+  @media (max-width: 850px) {
+     gap: 10px;
+    main {
+      max-width: 300px;
+    }
+
+    h2 {
+      font-size: 16px;
+       width: 220px;
+    }
+
+    .textProfile {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
